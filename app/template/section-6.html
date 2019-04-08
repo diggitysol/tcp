@@ -1,0 +1,576 @@
+<div class="container">
+  <h1><span>6.0</span> Current Position Analysis</h1>
+  <h2><span>6.1</span> Assets and Liabilities</h2>
+  <table class="table table-bordered mb-0">
+    <thead class="thead-light">
+      <tr>
+        <th>Assets</th>
+        <th>Description</th>
+        <th>Owner(s)</th>
+        <th>Data Acquired</th>
+        <th>Purchase Price</th>
+        <th>Cureent Value</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <th colspan="7" align="left">Lifestyle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="d-block d-lg-none bg-light"><strong>Assets</strong></td>
+        <td class="d-block d-lg-none bg-light"><strong>Lifestyle</strong></td>
+        <td><span class="d-none d-lg-block">Home</span><strong class="d-block d-lg-none">Home</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" ng-model="formData.section6[61].lifestyle.home.purchase_price" class="form-control" >
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" ng-model="formData.section6[61].lifestyle.home.current_value" class="form-control" ng-change="assetstotal()" >
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Home Contents</span><strong class="d-block d-lg-none">Home Contents</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home_content.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home_content.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home_content.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home_content.purchase_price" >
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home_content.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.home_content.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Holiday home</span><strong class="d-block d-lg-none">Holiday home</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.holiday_home.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.holiday_home.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.holiday_home.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.holiday_home.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.holiday_home.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.holiday_home.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Motor vechile 1</span><strong class="d-block d-lg-none">Motor vechile 1</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_1.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_1.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_1.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_1.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_1.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_1.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Motor vechile 2</span><strong class="d-block d-lg-none">Motor vechile 2</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_2.description" placeholder="" /></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_2.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_2.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_2.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_2.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.motor_vechicle_2.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Boat/Caravan</span><strong class="d-block d-lg-none">Boat/Caravan</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.boat.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.boat.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.boat.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.boat.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.boat.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.boat.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Cash(bank account)</span><strong class="d-block d-lg-none">Cash(bank account)</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.cash.description" placeholder="" /></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.cash.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.cash.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.cash.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.cash.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.cash.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Other:</span><strong class="d-block d-lg-none">Other:</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.other.description" placeholder="" /></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.other.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.other.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.other.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.other.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].lifestyle.other.notes" placeholder="" /></td>
+      </tr>
+    </tbody>
+    <thead class="thead-light">
+      <tr>
+        <th colspan="7" align="left">Financial</th>
+      </tr>
+    </thead>
+    <tbody>      
+      <tr>
+        <td class="d-block d-lg-none bg-light"><strong>Financial</strong></td>
+        <td><span class="d-none d-lg-block">Term deposite</span><strong class="d-block d-lg-none">Term deposite</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.term_deposit.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.term_deposit.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.term_deposit.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.term_deposit.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.term_deposit.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.term_deposit.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Managed funds</span><strong class="d-block d-lg-none">Managed funds</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.managed_funds.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.managed_funds.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.managed_funds.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.managed_funds.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.managed_funds.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.managed_funds.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Direct shares</span><strong class="d-block d-lg-none">Direct shares</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.direct_shares.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.direct_shares.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.direct_shares.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.direct_shares.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.direct_shares.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.direct_shares.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Investment property 1</span><strong class="d-block d-lg-none">Investment property 1</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_1.description" placeholder="" /></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_1.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_1.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_1.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_1.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_1.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Investment property 2</span><strong class="d-block d-lg-none">Investment property 2</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_2.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_2.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_2.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_2.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_2.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.investment_property_2.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Other</span><strong class="d-block d-lg-none">Other</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other1.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other1.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other1.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.other1.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.other1.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other1.notes" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td><span class="d-none d-lg-block">Other</span><strong class="d-block d-lg-none">Other</strong></td>
+        <td data-label="Description"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other2.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other2.owner" placeholder="" /></td>
+        <td data-label="Data Acquired"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other2.data_acquired" placeholder="" /></td>
+        <td data-label="Purchase Price"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.other2.purchase_price">
+          </div></td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].financial.other2.current_value" ng-change="assetstotal()">
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].financial.other2.notes" placeholder="" /></td>
+      </tr>
+      <tr class="bg-light">
+        <td><strong>Total assets</strong></td>
+        <td colspan="4" class="d-none d-lg-table-cell">&nbsp;</td>
+        <td data-label="Cureent Value"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].total_assets" disabled>
+          </div></td>
+        <td class="d-none d-lg-table-cell">&nbsp;</td>
+      </tr>
+    </tbody>
+    </table>
+    <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>Liabilities</th>
+        <th>Description/Security</th>
+        <th>Owner(s)</th>
+        <th>Institution</th>
+        <th>Loan Type<br />
+(IO or P&amp;I)</th>
+        <th>Balance</th>
+        <th>Interest Rate</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>      
+      <tr>
+        <td class="d-block d-lg-none bg-light"><strong>Liabilities</strong></td>
+        <td><span class="d-none d-lg-block">Home loan</span><strong class="d-block d-lg-none">Home loan</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.home_loan.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Motor vehicle(s)</span><strong class="d-block d-lg-none">Motor vehicle(s)</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.motor_vechicle.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Boat/Caravan</span><strong class="d-block d-lg-none">Boat/Caravan</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.boat.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Credit card(s)</span><strong class="d-block d-lg-none">Credit card(s)</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.credit_card.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Personal loan</span><strong class="d-block d-lg-none">Personal loan</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.personal_loan.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Investment loan(s)</span><strong class="d-block d-lg-none">Investment loan(s)</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.investment_loan.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Margin loan</span><strong class="d-block d-lg-none">Margin loan</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.margin_loan.notes" placeholder="" /></td>
+      </tr>
+		<tr>
+        <td><span class="d-none d-lg-block">Other</span><strong class="d-block d-lg-none">Other</strong></td>
+        <td data-label="Description/Security"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.description" placeholder=""></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.owner" placeholder="" /></td>
+        <td data-label="Institution"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.institution" placeholder="" /></td>
+        <td data-label="Loan Type(IO or P&amp;I)"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.loan_type" placeholder="" /></td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.balance" ng-change="liabilitestotal()">
+          </div></td>
+        <td data-label="Interest Rate"><div class="input-group">
+        <input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.interest_rate">
+            <div class="input-group-prepend">
+              <div class="input-group-text">%</div>
+            </div>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section6[61].liabilites.other.notes" placeholder="" /></td>
+      </tr>
+      <tr class="bg-light">
+        <td><strong>Total liabilitess</strong></td>
+        <td colspan="4" class="d-none d-lg-table-cell">&nbsp;</td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].total_liabilitess" disabled>
+          </div></td>
+        <td class="d-none d-lg-table-cell">&nbsp;</td>
+        <td class="d-none d-lg-table-cell">&nbsp;</td>
+      </tr>
+      <tr class="bg-light">
+        <td><strong>Net worth</strong></td>
+        <td colspan="4" class="d-none d-lg-table-cell">&nbsp;</td>
+        <td data-label="Balance"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section6[61].net_worth" disabled>
+          </div></td>
+        <td class="d-none d-lg-table-cell">&nbsp;</td>
+        <td class="d-none d-lg-table-cell">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Additional details</td>
+        <td colspan="7"><input type="text" class="form-control" ng-model="formData.section6[61].assets_additional_details"></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td colspan="2" class="d-none d-lg-table-cell">Are you prepared to liquidate assets to fund retirement or determine insurance needs?</td>
+        <td data-label="Are you prepared to liquidate assets to fund retirement or determine insurance needs?"><div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" ng-model="formData.section6[61].insurance_need" value="Yes">
+            <label class="form-check-label" for="inlineRadio1">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" ng-model="formData.section6[61].insurance_need" value="No">
+            <label class="form-check-label" for="inlineRadio2">No</label>
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">If yes, please provide details</td>
+        <td colspan="2" data-label="If yes, please provide details"><input type="text" class="form-control" ng-model="formData.section6[61].insurance_need_details" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="d-none d-lg-table-cell">Are there any Capital Gains Tax (CGT) implications to be considered?</td>
+        <td data-label="Are there any Capital Gains Tax (CGT) implications to be considered?"><div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" ng-model="formData.section6[61].capital_gain_tax" value="Yes">
+            <label class="form-check-label" for="inlineRadio1">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" ng-model="formData.section6[61].capital_gain_tax" value="No">
+            <label class="form-check-label" for="inlineRadio2">No</label>
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">If yes, please provide details</td>
+        <td colspan="2" data-label="If yes, please provide details"><input type="text" class="form-control" ng-model="formData.section6[61].capital_gain_tax_details" placeholder="" /></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional details:</td>
+        <td colspan="2" data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section6[61].additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-left" ui-sref="form.section5" >Previous</button>
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.section7" >Next</button>
+</div>

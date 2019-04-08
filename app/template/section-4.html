@@ -1,0 +1,99 @@
+<div class="container">
+  <h1><span>4.0</span> Expenses</h1>
+  <h2><span>4.1</span> Summary of Expenses</h2>
+  <h6 class="mt-2 mb-2"><em>For assistance in compiling the below amounts, please refer to detailed expense report in Part C | Personal Expenses</em></h6>
+  <div class="custom-bg-light">Figures are to be entered as annual amounts</div>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td class="col-lg-6 d-none d-lg-table-cell">Home Loan</td>
+        <td data-label="Home Loan"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].home_loan" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Credit card 1</td>
+        <td data-label="Credit card 1"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].credit_card_1" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Credit card 2</td>
+        <td data-label="Credit card 2"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].credit_card_2" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Personal loan</td>
+        <td data-label="Personal loan"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].personal_loan" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Investment loan 1</td>
+        <td data-label="Investment loan 1"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].investiment_loan_1" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Investment loan 2</td>
+        <td data-label="Investment loan 2"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].investiment_loan_2" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Margin loan</td>
+        <td data-label="Margin loan"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].margin_loan" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Living expenses e.g. consumables, transport, health, housing</td>
+        <td data-label="Living expenses e.g. consumables, transport, health, housing"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].living_expenses" ng-change="expensesummerytotal()">
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell"><strong>Total(transfer to 5.1)</strong></td>
+        <td data-label="Total(transfer to 5.1)"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section4[41].total" disabled>
+          </div></td>
+      </tr>
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional details:</td>
+        <td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section4[41].additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-left" ui-sref="form.section3" >Previous</button>
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.section5" >Next</button>
+</div>

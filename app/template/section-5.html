@@ -1,0 +1,136 @@
+<div class="container" ng-init="calc2();">
+  <h1><span>5.0</span> Financial profile</h1>
+  <h2><span>5.1</span> Annual Surplus/(Deficit)</h2>
+  <div class="row no-gutters">
+    <div class="col-lg-8">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>&nbsp;</th>
+            <th>Client 1(or joint)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 1(or joint)</strong></td>
+            <td class="d-none d-lg-table-cell">Total gross annual income(refer to 3.4)</td>
+            <td data-label="Total gross annual income(refer to 3.4)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client1.total_gross" disabled>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Total estimated tax liability</td>
+            <td data-label="Total estimated tax liability"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client1.total_estimated" >
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Total net annual income</td>
+            <td data-label="Total net annual income"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client1.total_net" >
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Total annual expenses(refer to 4.1)</td>
+            <td data-label="Total annual expenses(refer to 4.1)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client1.total_annual_expenses" disabled>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Surplus/(Deficit) cash flow</td>
+            <td data-label="Surplus/(Deficit) cash flow"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client1.surplus" >
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-4">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Client 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 2</strong></td>
+            <td data-label="Total gross annual income(refer to 3.4)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client2.total_gross"/>
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Total estimated tax liability"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client2.total_estimated"/>
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Total net annual income"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client2.total_net" />
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Total annual expenses(refer to 4.1)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client2.total_annual_expenses" />
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Surplus/(Deficit) cash flow"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section5[51].client2.surplus"/>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional details:</td>
+        <td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section5[51].additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Notes</h2>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td><textarea class="form-control" ng-model="formData.section5[51].notes" rows="3"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-left" ui-sref="form.section4" >Previous</button>
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.section6" >Next</button>
+</div>

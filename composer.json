@@ -1,0 +1,9 @@
+{
+	"name": "Spoor",
+   "type": "Spoor",
+   "description": "Spoor",
+   "license": "GPL-3.0+",
+   "require": {
+        "ext-mongo": "*"
+    }
+}

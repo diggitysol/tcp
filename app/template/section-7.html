@@ -1,0 +1,647 @@
+<div class="container">
+  <h1><span>7.0</span> Existing Superannuation</h1>
+  <h2><span>7.1</span> Superannuation Assets and Income Streams</h2>
+  <table class="table table-bordered mb-0">
+    <thead class="thead-light">
+      <tr>
+        <th>Fund Name</th>
+        <th>Owner(s)</th>
+        <th>Value</th>
+        <th>Pension<br />
+          Amount<br />
+          (if applic.)</th>
+        <th>Insurance Type</th>
+        <th>Sum Insured</th>
+        <th>Premium</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="i in [1,2,3,4,5]" >
+        <td data-label="Fund Name"><input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].fund_name" placeholder="" /></td>
+        <td data-label="Owner(s)"><input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].owner" placeholder=""></td>
+        <td data-label="Value"><div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text" ng-model="formData.section7[71].superannuation[$index+1].value1">$</div>
+            </div>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Tax free: $</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].value2"/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Taxable: $</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].value3" />
+          </div></td>
+        <td data-label="Pension Amount (if applic.)"><div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].pension_amount"/>
+          </div></td>
+        <td data-label="Insurance Type"><input type="text" class="form-control mb-2" ng-model="formData.section7[71].superannuation[$index+1].insurance_type1" placeholder="" />
+          <input type="text" class="form-control mb-2" ng-model="formData.section7[71].superannuation[$index+1].insurance_type2" placeholder="" />
+          <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].insurance_type3" placeholder="" /></td>
+        <td data-label="Sum Insured"><div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].sum_assured1">
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].sum_assured2">
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].sum_assured3">
+          </div></td>
+        <td data-label="Premium"><div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].premium1">
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].premium2">
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="text" class="form-control" ng-model="formData.section7[71].superannuation[$index+1].premium3">
+          </div></td>
+      </tr>
+     
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional Details:</td>
+        <td colspan="6" data-label="Additional Details:"><input type="text" class="form-control" ng-model="formData.section7[71].superannuation.additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <h2><span>7.2</span> Beneficiaries</h2>
+  <table class="table table-bordered mb-0">
+    <thead class="thead-light">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="i in [1,2,3]">
+        <td data-label="Name"><input type="text" class="form-control" ng-model="formData.section7[72].beneficiaries[$index+1].name" placeholder="" /></td>
+        <td data-label="Type"><div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" ng-model="formData.section7[72].beneficiaries[$index+1].type.nominated">
+            <label class="form-check-label" for="defaultCheck1"> Nominated Beneficiary </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" ng-model="formData.section7[72].beneficiaries[$index+1].type.binding">
+            <label class="form-check-label" for="defaultCheck1"> Binding Death Nomination </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" ng-model="formData.section7[72].beneficiaries[$index+1].type.reversionary">
+            <label class="form-check-label" for="defaultCheck1"> Reversionary </label>
+          </div></td>
+        <td data-label="Notes"><input type="text" class="form-control" ng-model="formData.section7[72].beneficiaries[$index+1].notes" placeholder="" /></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  <h2><span>7.3</span> Concessional Superannuation Contributions</h2>
+  <div class="row no-gutters">
+    <div class="col-md-8">
+      <table  class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Client1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-none d-md-table-cell w-50">Have you made any concessional contributions to any superannuation fund in the current or previous two financial years?</td>
+            <td class="d-block d-md-none bg-light text-left"><strong>Client1</strong></td>
+            <td data-label="Have you made any concessional contributions to any superannuation fund in the current or previous two financial years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client1.financial_years" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client1.financial_years" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">If yes, please provide full details of amount(s)</td>
+            <td data-label="If yes, please provide full details of amount(s)"><input type="text" class="form-control" ng-model="formData.section7[73].client1.financial_years_details_amount"></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">Do you intend to claim a personal tax deduction for all or part of these contributions?</td>
+            <td data-label="Do you intend to claim a personal tax deduction for all or part of these contributions?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client1.claim_deduction" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client1.claim_deduction" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">If yes, please provide full details</td>
+            <td data-label="If yes, please provide details"><input type="text" class="form-control" ng-model="formData.section7[73].client1.claim_deduction_details"></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">Do you intend to make concessional contributions to any superannuation funds for future years?</td>
+            <td data-label="Do you intend to make concessional contributions to any superannuation funds for future years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client1.future_year" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client1.future_year" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <table  class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Client2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-md-none bg-light text-left"><strong>Client2</strong></td>
+            <td class="height-90" data-label="Have you made any concessional contributions to any superannuation fund in the current or previous two financial years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client2.financial_years" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client2.financial_years" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="If yes, please provide full details of amount(s)"><input type="text" class="form-control" ng-model="formData.section7[73].client2.financial_years_details_amount"></td>
+          </tr>
+          <tr>
+            <td class="height-70" data-label="Do you intend to claim a personal tax deduction for all or part of these contributions?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client2.claim_deduction" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client2.claim_deduction" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="If yes, please provide details"><input type="text" class="form-control" ng-model="formData.section7[73].client2.claim_deduction_details"></td>
+          </tr>
+          <tr>
+            <td class="height-90" data-label="Do you intend to make concessional contributions to any superannuation funds for future years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client2.future_year" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[73].client2.future_year" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Client1</td>
+      <td class="d-block d-md-none bg-light text-left"><strong>Client1</strong></td>
+      <td> Year1
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client1.year1">
+        </div></td>
+      <td> Year2
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client1.year2">
+        </div></td>
+      <td>Year3
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client1.year3">
+        </div></td>
+      <td>Year4
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client1.year4">
+        </div></td>
+      <td>Year5
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client1.year5">
+        </div></td>
+    </tr>
+  </table>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Client2</td>
+      <td class="d-block d-md-none bg-light text-left"><strong>Client2</strong></td>
+      <td> Year1
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client2.year1">
+        </div></td>
+      <td> Year2
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client2.year2">
+        </div></td>
+      <td>Year3
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client2.year3">
+        </div></td>
+      <td>Year4
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client2.year4">
+        </div></td>
+      <td>Year5
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[73].client2.year5">
+        </div></td>
+    </tr>
+  </table>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Additional Details</td>
+      <td data-label="Additional Details" colspan="3"><input type="text" class="form-control" ng-model="formData.section7[73].additional_details" placeholder=""></td>
+    </tr>
+  </table>
+	<h2><span>7.4</span> Non-Concessional Superannuation Contributions</h2>
+  <div class="row no-gutters">
+    <div class="col-md-8">
+      <table  class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Client1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-none d-md-table-cell w-50">Have you made any non-concessional contributions to any superannuation fund in the current or previous two financial years?</td>
+            <td class="d-block d-md-none bg-light text-left"><strong>Client1</strong></td>
+            <td data-label="Have you made any non-concessional contributions to any superannuation fund in the current or previous two financial years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client1.financial_years" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client1.financial_years" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">If yes, please provide full details of amount(s)</td>
+            <td data-label="If yes, please provide full details of amount(s)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section7[74].client1.financial_years_details_amount" >
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">Do you intend to make non-concessional contributions to any superannuation funds for future years?</td>
+            <td data-label="Do you intend to claim a personal tax deduction for all or part of these contributions?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client1.future_year" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client1.future_year" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+			 <tr>
+            <td class="d-none d-md-table-cell">Have You or do you intend to make personal non-concessional contributions which may result in entitlement to the Government co-contribution?</td>
+            <td data-label="Have You or do you intend to make personal non-concessional contributions which may result in entitlement to the Government co-contribution?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client1.co_contribution" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client1.co_contribution" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+			 <tr>
+            <td class="d-none d-md-table-cell">If yes, please provide full details of amount(s)</td>
+            <td data-label="If yes, please provide full details of amount(s)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section7[74].client1.co_contribution_amount" >
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <table  class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Client2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-md-none bg-light text-left"><strong>Client2</strong></td>
+            <td class="height-90" data-label="Have you made any non-concessional contributions to any superannuation fund in the current or previous two financial years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client2.financial_years" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client2.financial_years" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="If yes, please provide full details of amount(s)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section7[74].client2.financial_years_details_amount">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="height-90" data-label="Do you intend to make non-concessional contributions to any superannuation funds for future years?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client2.future_year" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client2.future_year" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+			 
+			 <tr>
+            <td class="height-100" data-label="Have you or do you intend to make personal non-concessional contributions which may result in entitlement to the Government co-contribution?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client2.co_contribution" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[74].client2.co_contribution" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+			 <tr>
+            <td data-label="If yes, please provide full details of amount(s)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section7[74].client2.co_contribution_amount" >
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Client1</td>
+      <td class="d-block d-md-none bg-light text-left"><strong>Client1</strong></td>
+      <td> Year1
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client1.year1">
+        </div></td>
+      <td> Year2
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client1.year2">
+        </div></td>
+      <td>Year3
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client1.year3">
+        </div></td>
+      <td>Year4
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client1.year4">
+        </div></td>
+      <td>Year5
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client1.year5">
+        </div></td>
+    </tr>
+  </table>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Client2</td>
+      <td class="d-block d-md-none bg-light text-left"><strong>Client2</strong></td>
+      <td> Year1
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client2.year1">
+        </div></td>
+      <td> Year2
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client2.year2">
+        </div></td>
+      <td>Year3
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client2.year3">
+        </div></td>
+      <td>Year4
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client2.year4">
+        </div></td>
+      <td>Year5
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" ng-model="formData.section7[74].client2.year5">
+        </div></td>
+    </tr>
+  </table>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Additional Details</td>
+      <td data-label="Additional Details" colspan="3"><input type="text" class="form-control" ng-model="formData.section7[74].additional_details" placeholder=""></td>
+    </tr>
+  </table>
+  <h2><span>7.5</span> Other Superannuation Contributions</h2>
+  <div class="row no-gutters">
+    <div class="col-md-8">
+      <table  class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Client1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-none d-md-table-cell w-50">Have you or do you intend to make a spouse contribution which will result in an entitlement to a tax offset?</td>
+            <td class="d-block d-md-none bg-light text-left"><strong>Client1</strong></td>
+            <td data-label="Have you or do you intend to make a spouse contribution which will result in an entitlement to a tax offset?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client1.tax_offset" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client1.tax_offset" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">If yes, please provide full details of amount(s)</td>
+            <td data-label="If yes, please provide full details of amount(s)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section7[75].client1.tax_offset_details_amount" >
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-md-table-cell">Has there been an excess contribution tax assessment from the Australian Taxation Office (ATO) in the past? </td>
+            <td data-label="Has there been an excess contribution tax assessment from the Australian Taxation Office (ATO) in the past? "><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client1.ato" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client1.ato" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+			 <tr>
+            <td class="d-none d-md-table-cell">If yes, please provide details</td>
+            <td data-label="If yes, please provide details"><div class="input-group">
+               <input type="text" class="form-control" ng-model="formData.section7[75].client1.ato_details" >
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <table  class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Client2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-md-none bg-light text-left"><strong>Client2</strong></td>
+            <td class="height-90" data-label="Have you or do you intend to make a spouse contribution which will result in an entitlement to a tax offset?"><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client2.tax_offset" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client2.tax_offset" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="If yes, please provide full details of amount(s)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section7[75].client2.tax_offset_details_amount">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="height-90" data-label="Has there been an excess contribution tax assessment from the Australian Taxation Office (ATO) in the past? "><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client2.ato" value="Yes">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" ng-model="formData.section7[75].client2.ato" value="No">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div></td>
+          </tr>
+
+			 <tr>
+            <td data-label="If yes, please provide details"><div class="input-group">
+                <input type="text" class="form-control" ng-model="formData.section7[75].client2.ato_details" >
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table  class="table table-bordered">
+    <tr>
+      <td class="d-none d-md-table-cell"> Additional Details</td>
+      <td data-label="Additional Details" colspan="3"><input type="text" class="form-control" ng-model="formData.section7[75].additional_details" placeholder=""></td>
+    </tr>
+  </table>
+  <h2>Notes</h2>
+  <table  class="table table-bordered">
+    <tbody>
+      <tr>
+        <td data-label="Notes"><textarea class="form-control" ng-model="formData.section7[75].notes" placeholder=""></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-left" ui-sref="form.section6" >Previous</button>
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.preview">Preview</button>
+</div>

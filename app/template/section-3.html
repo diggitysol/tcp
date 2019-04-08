@@ -1,0 +1,713 @@
+<div class="container" ng-init="calc1();calculateclient1Total();calculateclient2Total();">
+<h1><span>3.0</span>Income and Other Payments</h1>
+<h2><span>3.1</span>Income</h2>
+
+<div class="row no-gutters">
+<div class="col-lg-8">
+<table  class="table table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col"><small>Figures are to be entered as annual ammounts</small></th>
+      <th scope="col">Client1 (or joint)</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="d-none d-lg-table-cell">Gross salary excluding Supperannuation Guarantee</td>
+      <td class="d-block d-lg-none bg-light text-left"><strong>Client1</strong></td>
+      <td data-label="Gross salary excluding Supperannuation Guarantee">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.gross_salary" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+      <td class="d-none d-lg-table-cell">Bonuses</td>
+      <td data-label="Bonuses">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.bonuses" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+      <td class="d-none d-lg-table-cell">Are bonuses included for SG purposes?</td>
+      <td data-label="Are bonuses included for SG purposes?">
+      <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" ng-model="formData.section3[31].client1.sg_purpose" value="Yes">
+  <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" ng-model="formData.section3[31].client1.sg_purpose" value="No">
+  <label class="form-check-label" for="inlineCheckbox2">No</label>
+</div>
+      </td>
+      </tr>
+    <tr>
+      <td class="d-none d-lg-table-cell">Motor vehicle (packaged)</td>
+      <td data-label="Motor vehicle (packaged)">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.motor_cycle" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+	<tr>
+      <td class="d-none d-lg-table-cell">Superannuation guarantee component</td>
+      <td data-label="Superannuation guarantee component">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.superannuation" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+      <td class="d-none d-lg-table-cell">Centerlink/DVA (refer to 2.5)</td>
+      <td data-label="Centerlink/DVA (refer to 2.5)">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.centerlink_dva" placeholder="" disabled>
+      </div>
+      </td>
+      </tr>
+      <tr>
+      <td class="d-none d-lg-table-cell">Family Assistance (refer to 2.5)</td>
+      <td data-label="Family Assistance (refer to 2.5)">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.family_assistance" placeholder="" disabled>
+      </div>
+      </td>
+      </tr>
+<tr>
+      <td class="d-none d-lg-table-cell">Child support/Maintenance</td>
+      <td data-label="Child support/Maintenance">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.child_support" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+        <tr>
+      <td class="d-none d-lg-table-cell">Amount of redundancy packeage to be recieved or expected?</td>
+      <td data-label="Amount of redundancy packeage to be recieved or expected?">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.redundancy_amount" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+      <td class="d-none d-lg-table-cell">Amount of long service payments to be recieved or expected?</td>
+      <td data-label="Amount of redundancy packeage to be recieved or expected?">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.service_payment" placeholder="" ng-change="calculateclient1Total()">
+      </div>
+      </td>
+      </tr>
+      <tr>
+      <td class="d-none d-lg-table-cell">Sub-total</td>
+      <td data-label="Sub-total">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+		   
+        <input type="text" class="form-control" ng-model="formData.section3[31].client1.subtotal"  placeholder="" disabled>
+      </div>
+      </td>
+      </tr>
+  </tbody>
+
+
+
+</table>
+</div>
+
+
+<div class="col-lg-4">
+<table class="table table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Client2</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="d-block d-lg-none bg-light text-left"><strong>Client2</strong></td>
+      <td data-label="Gross salary excluding Supperannuation Guarantee">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.gross_salary" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+
+      <td data-label="Bonuses">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.bonuses" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+
+      <td data-label="Are bonuses included for SG purposes?">
+      <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" ng-model="formData.section3[31].client2.sg_purpose" value="Yes">
+  <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" ng-model="formData.section3[31].client2.sg_purpose" value="No">
+  <label class="form-check-label" for="inlineCheckbox2">No</label>
+</div>
+      </td>
+      </tr>
+    <tr>
+
+      <td data-label="Motor vehicle (packaged)">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.motor_cycle" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+	<tr>
+
+      <td data-label="Superannuation guarantee component">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.superannuation" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+      <td data-label="Centerlink/DVA (refer to 2.5)">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.centerlink_dva" placeholder="" disabled>
+      </div>
+      </td>
+      </tr>
+      <tr>
+      <td data-label="Family Assistance (refer to 2.5)">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.family_assistance" placeholder="" disabled>
+      </div>
+      </td>
+      </tr>
+<tr>
+      <td data-label="Child support/Maintenance">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.child_support" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+        <tr>
+      <td data-label="Amount of redundancy packeage to be recieved or expected?">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.redundancy_amount" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+    <tr>
+      <td data-label="Amount of long service payments to be recieved or expected?">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.service_payment" placeholder="" ng-change="calculateclient2Total()">
+      </div>
+      </td>
+      </tr>
+      <tr>
+      <td data-label="Sub-total">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" ng-model="formData.section3[31].client2.subtotal" placeholder="" disabled>
+      </div>
+      </td>
+      </tr>
+
+  </tbody>
+  
+</table>
+</div>
+</div>
+<table class="table table-bordered">
+<tbody>
+<tr>
+            <td class="d-none d-lg-table-cell">Additional details:</td>
+      <td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section3[31].additional_details" placeholder=""></td>
+      </tr>
+  </tbody>
+</table>
+<h2>Notes</h2>
+<table class="table table-bordered">
+<tbody>
+<tr>
+      <td data-label="Additional details:"><textarea class="form-control" ng-model="formData.section3[31].notes" rows="3"></textarea></td>
+      </tr>
+  </tbody>
+</table>
+<h2><span>3.2</span> Investment Income/Dividends</h2>
+  <div class="row no-gutters">
+    <div class="col-lg-8">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Figures are to be entered as annual amounts</th>
+            <th>Client 1(or joint)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td class="d-block d-lg-none bg-light"><strong>Client 1(or joint)</strong></td>
+            <td class="d-block d-lg-none bg-light">Figures are to be entered as annual amounts</td>
+            <td class="d-none d-lg-table-cell">Cash (bank accounts)</td>
+            <td data-label="Cash (bank accounts)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.cash"  ng-change="investmentclient1Total()" >
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Term deposite</td>
+            <td data-label="Term deposite"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.term_deposit" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Managed funds</td>
+            <td data-label="Managed funds"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.managed_funds" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Direct shares</td>
+            <td data-label="Direct shares"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.direct_shares" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Holiday Home</td>
+            <td data-label="Holiday Home"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.holiday" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Investment property 1</td>
+            <td data-label="Investment property 1"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.investiment_property_1" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Investment property 2</td>
+            <td data-label="Investment property 2"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.investiment_property_2" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Other distributions/income e.g. business interest, trusts</td>
+            <td data-label="Other distributions/income e.g. business interest, trusts"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.other_income" ng-change="investmentclient1Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell"><strong>Sub-total</strong></td>
+            <td data-label="Sub-total"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client1.subtotal" disabled>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-4">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Client 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 2</strong></td>
+            <td class="d-block d-lg-none bg-light">Figures are to be entered as annual amounts</td>
+            <td data-label="Cash (bank accounts)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.cash" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Term deposite"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.term_deposit" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Managed funds"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.managed_funds" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Direct shares"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.direct_shares" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Holiday Home"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.holiday" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Investment property 1"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.investiment_property_1" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Investment property 2"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.investiment_property_2" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Other distributions/income e.g. business interest, trusts"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.other_income" ng-change="investmentclient2Total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Sub-total"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[32].client2.subtotal" disabled>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional details:</td>
+        <td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section3[32].additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <h2><span>3.3</span> Pension Income</h2>
+  <div class="row no-gutters">
+    <div class="col-lg-8">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Figures are to be entered as annual amounts</th>
+            <th>Client 1(or joint)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 1(or joint)</strong></td>
+            <td class="d-block d-lg-none bg-light">Figures are to be entered as annual amounts</td>
+            <td class="d-none d-lg-table-cell">Pension income (including SMSF if relevant)</td>
+            <td data-label="Pension income (including SMSF if relevant)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client1.pension_income" ng-change="pensionclient1total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Foreign pensions e.g. UK or NZ pensions</td>
+            <td data-label="Foreign pensions e.g. UK or NZ pensions"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client1.foreign_pension" ng-change="pensionclient1total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">Other</td>
+            <td data-label="Other"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client1.other" ng-change="pensionclient1total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell"><strong>Sub-total</strong></td>
+            <td data-label="Sub-total"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client1.subtotal" disabled>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-4">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Client 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 2</strong></td>
+            <td class="d-block d-lg-none bg-light">Figures are to be entered as annual amounts</td>
+            <td data-label="Pension income (including SMSF if relevant)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client2.pension_income" ng-change="pensionclient2total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Foreign pensions e.g. UK or NZ pensions"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client2.foreign_pension" ng-change="pensionclient2total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Other"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client2.other" ng-change="pensionclient2total()">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Sub-total"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[33].client2.subtotal" disabled>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional details:</td>
+        <td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section3[33].additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <h2><span>3.4</span> Total Income</h2>
+  <div class="row no-gutters">
+    <div class="col-lg-8">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Figures are to be entered as annual amounts</th>
+            <th>Client 1(or joint)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 1(or joint)</strong></td>
+            <td class="d-block d-lg-none bg-light">Figures are to be entered as annual amounts</td>
+            <td class="d-none d-lg-table-cell">3.1 | Income</td>
+            <td data-label="3.1 | Income"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client1.income" disabled>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">3.2 | Investment income/Dividends</td>
+            <td data-label="3.2 | Investment income/Dividends"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client1.investiment_income" disabled>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell">3.3 | Pension income</td>
+            <td data-label="3.3 | Pension income"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client1.pension_income" disabled>
+              </div></td>
+          </tr>
+          <tr>
+            <td class="d-none d-lg-table-cell"><strong>Total (transfer to 5.1)</strong></td>
+            <td data-label="Total (transfer to 5.1)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client1.total" disabled>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-4">
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Client 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="d-block d-lg-none bg-light"><strong>Client 2</strong></td>
+            <td class="d-block d-lg-none bg-light">Figures are to be entered as annual amounts</td>
+            <td data-label="3.1 | Income"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client2.income">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="3.2 | Investment income/Dividends"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client2.investiment_income">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="3.3 | Pension income"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client2.pension_income">
+              </div></td>
+          </tr>
+          <tr>
+            <td data-label="Total (transfer to 5.1)"><div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input type="text" class="form-control" ng-model="formData.section3[34].client2.total">
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td class="d-none d-lg-table-cell">Additional details:</td>
+        <td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section3[34].additional_details" placeholder="" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Notes</h2>
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td><textarea class="form-control" rows="3" ng-model="formData.section3[34].notes"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-left" ui-sref="form.section2" >Previous</button>
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.section4" >Next</button>
+</div>

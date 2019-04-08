@@ -1,0 +1,22 @@
+<nav class="sidebar bg-dark">
+	<ul class="list-unstyled">
+		<li><a ui-sref-active="active" ui-sref=".section0">Client Data Form</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section1">1.0 Pre-Discovery</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section2">2.0 Personal Details</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section3">3.0 Income and Other Payments</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section4">4.0 Expenses</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section5">5.0 Financial profile</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section6">6.0 Current Position Analysis</a></li>
+		<li><a ui-sref-active="active" ui-sref=".section7">7.0 Existing Superannuation</a></li>
+		<li><a ui-sref-active="active" ui-sref=".preview">Preview</a></li>
+	</ul>
+</nav>
+<div class="content p-2">
+	<form id="signup-form" name="myForm" ng-submit="processForm()">
+		<div id="form-views" ui-view></div>
+	</form>
+	
+</div>
+
+
+

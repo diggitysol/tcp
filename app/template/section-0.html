@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="row align-items-center mb-5">
+    <div class="col-md"> <img src="TCPNews_Logo.png" class="img-fluid"> </div>
+    <div class="col-md-auto">
+      <h1>Client Data Form <br/>
+        - Financial Planning</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>What this Document is About</h1>
+      <p>This document, called a Client Data Form (CDEF), collects your financial and personal  information to help us provide you with advice.</p>
+      <ul>
+        <li>Part A I Personal Information </li>
+        <li>Part B I Personal Insurances </li>
+        <li>Part C I Personal Expenses </li>
+        <li>Part D I Client Declaration</li>
+        <li>Risk Profile Questionnaire</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p>Reference document to be attached</p>
+      <p>Refer to a new section</p>
+      <p>Signature required</p>
+    </div>
+  </div>
+  <form class="form-horizontal" role="form">
+    <legend class="heading-title">Prepared For (Client Details)</legend>
+    <div class="form-group row">
+      <label for="firstName" class="col-lg-2 control-label">Client Name(s)</label>
+      <div class="col-lg-10">
+        <input type="text" name="formData.section0.client_name" ng-model="formData.section0.client_name" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-lg-2 control-label">Date</label>
+      <div class="col-lg-10">
+        <input type="text" ng-model="formData.section0.date" class="form-control">
+      </div>
+    </div>
+    <legend class="heading-title">Prepared For (Adviser Details)</legend>
+    <div class="form-group row">
+      <label for="firstName" class="col-lg-2 control-label">Adviser Name</label>
+      <div class="col-lg-10">
+        <input type="text" ng-model="formData.section0.adviser_name" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-lg-2 control-label">Company Name</label>
+      <div class="col-lg-10">
+        <input type="text" ng-model="formData.section0.company_name" class="form-control">
+        <span>The above mentioned adviser is an authorised representative of The Computer Planner Pty Ltd</span> </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="form-group row">
+          <label class="col-lg-4 control-label" for="address">Street Address:</label>
+          <div class="col-lg-8">
+            <textarea class="form-control" rows="4" ng-model="formData.section0.street_address"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-lg-4 control-label" for="postal">Postal Address:</label>
+          <div class="col-lg-8">
+            <textarea class="form-control" rows="3" ng-model="formData.section0.postal_address"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group row">
+          <label for="email" class="col-lg-3 control-label text-lg-right">Phone Number</label>
+          <div class="col-lg-9">
+            <input type="text" ng-model="formData.section0.phone_number" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-lg-3 control-label text-lg-right">Fax Number</label>
+          <div class="col-lg-9">
+            <input type="text" ng-model="formData.section0.fax" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-lg-3 control-label text-lg-right">Email Address</label>
+          <div class="col-lg-9">
+            <input type="text" ng-model="formData.section0.email" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-lg-3 control-label text-lg-right">Website</label>
+          <div class="col-lg-9">
+            <input type="text" ng-model="formData.section0.website" class="form-control">
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- /form -->
+  <div class="clearfix"></div>
+  <legend class="heading-title">Licensee details</legend>
+  <p>The Complete Planner Pyt Ltd ABN 48 077 994 104 AFSL Licence No.278161<br />
+    PO BOX 265, Balwyn, Vic. 3103<br />
+    Phone: <a href="tel:">(03) 9882 2102</a> Email: info@thecompleteplanner.com.au Website: www.thecompleteplanner.com.au</p>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.section1" >Next</button>
+</div>

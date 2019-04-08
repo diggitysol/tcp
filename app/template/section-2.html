@@ -1,0 +1,819 @@
+<div class="container">
+	<h1><span>2.0</span> Personal Details</h1>
+	<h2><span>2.1</span> Contact Details</h2>
+	<div class="row no-gutters">
+	<div class="col-lg-8">
+	<table  class="table table-bordered">
+	  <thead class="thead-light">
+		 <tr>
+			<th scope="col"></th>
+			<th scope="col">Client1</th>
+			</tr>
+	  </thead>
+	  <tbody>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Title</td>
+			<td class="d-block d-lg-none bg-light text-left"><strong>Client1</strong></td>
+			<td data-label="Title"><input type="text" class="form-control" ng-model="formData.section2[21].client1.title" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Surname</td>
+			<td data-label="Surname"><input type="text" class="form-control" ng-model="formData.section2[21].client1.surname" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Given name(s)</td>
+			<td data-label="Given Name(s)"><input type="text" class="form-control" ng-model="formData.section2[21].client1.given_name" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Preferred name</td>
+			<td data-label="Preferred Name"><input type="text" class="form-control" ng-model="formData.section2[21].client1.preferred_name" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Gender</td>
+			<td data-label="Gender">
+			<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client1.gender" value="Male">
+	  <label class="form-check-label" for="inlineRadio1">Male</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client1.gender" value="Female">
+	  <label class="form-check-label" for="inlineRadio2">Female</label>
+	</div></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Marital status</td>
+			<td data-label="Marital Status"><input type="text" class="form-control" ng-model="formData.section2[21].client1.marital_status" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Australian resident</td>
+			<td data-label="Australian Resident"><div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client1.australian_resident" value="Yes">
+	  <label class="form-check-label" for="inlineRadio1">Yes</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client1.australian_resident" value="No">
+	  <label class="form-check-label" for="inlineRadio2">No</label>
+	</div></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">If no, country of residence</td>
+			<td data-label="If no, country of residence"><input type="text" class="form-control" ng-model="formData.section2[21].client1.country_resident" placeholder="" /></td>
+		 </tr>
+			  <tr>
+			<td class="d-none d-lg-table-cell">Australian citizen</td>
+			<td data-label="Australian citizen"><div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client1.australian_citizen" value="Yes">
+	  <label class="form-check-label" for="inlineRadio1">Yes</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client1.australian_citizen" value="No">
+	  <label class="form-check-label" for="inlineRadio2">No</label>
+	</div></td>
+		 </tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">If no, country where citizenship held and visa details</td>
+			<td data-label="If no, country where citizenship held and visa details"><textarea class="form-control" ng-model="formData.section2[21].client1.country_citizen" rows="3"></textarea></td>
+			</tr>
+			<tr>
+			<td colspan="2" class="bg-light text-left">Residential Address</td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Street</td>
+			<td data-label="Street"><textarea class="form-control" ng-model="formData.section2[21].client1.residential.street" rows="3"></textarea></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Suburub</td>
+			<td data-label="Suburub"><input type="text" class="form-control" ng-model="formData.section2[21].client1.residential.suburub" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">State</td>
+			<td data-label="State"><input type="text" class="form-control" ng-model="formData.section2[21].client1.residential.state" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Postcode</td>
+			<td data-label="Postcode"><input type="text" class="form-control" ng-model="formData.section2[21].client1.residential.postcode" placeholder=""></td>
+			</tr>
+			<tr>
+			<td colspan="2" class="bg-light text-left"><div class="form-check pl-0">Postal Address
+		 <input type="checkbox" class="form-check-input ml-5" ng-change="copyAddresses()" ng-model="formData.section2[21].client1.postal_address">
+		 <label class="form-check-label" for="exampleCheck1"></label>
+	  </div></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Street</td>
+			<td data-label="Street"><textarea class="form-control" ng-model="formData.section2[21].client1.postal.street" rows="3"></textarea></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Suburub</td>
+			<td data-label="Suburub"><input type="text" class="form-control" ng-model="formData.section2[21].client1.postal.suburub" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">State</td>
+			<td data-label="State"><input type="text" class="form-control" ng-model="formData.section2[21].client1.postal.state" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Postcode</td>
+			<td data-label="Postcode"><input type="text" class="form-control" ng-model="formData.section2[21].client1.postal.postcode" placeholder=""></td>
+			</tr>
+			<tr>
+			<td colspan="2" class="bg-light text-left">Phone Fax and Email</td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Home phone</td>
+			<td data-label="Home Phone"><input type="text" class="form-control" ng-model="formData.section2[21].client1.home_phone" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Business phone</td>
+			<td data-label="Business Phone"><input type="text" class="form-control" ng-model="formData.section2[21].client1.business_phone" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Business fax</td>
+			<td data-label="Business fax"><input type="text" class="form-control" ng-model="formData.section2[21].client1.business_fax" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Mobile</td>
+			<td data-label="Mobile"><input type="text" class="form-control" ng-model="formData.section2[21].client1.mobile" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Email</td>
+			<td data-label="Email"><input type="text" class="form-control" ng-model="formData.section2[21].client1.email" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Preferred contact method</td>
+			<td data-label="Preferred contact method"><input type="text" class="form-control" ng-model="formData.section2[21].client1.contact_method" placeholder=""></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">Social networking</td>
+			<td data-label="Social networking">
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client1.social.facebook" name="social">
+	  <label class="form-check-label" for="inlineCheckbox1">Facebook</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client1.social.twitter" name="social">
+	  <label class="form-check-label" for="inlineCheckbox2">Twitter</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client1.social.linkedin" name="social">
+	  <label class="form-check-label" for="inlineCheckbox3">Linkedin</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client1.social.skype" name="social">
+	  <label class="form-check-label" for="inlineCheckbox4">Skype</label>
+	</div>&nbsp;
+	</td>
+			</tr>
+					<tr>
+					<td class="d-none d-lg-table-cell">Personal interests</td>
+			<td data-label="Personal interests"><input type="text" class="form-control" ng-model="formData.section2[21].client1.personal_interest" placeholder=""></td>
+			</tr>
+	  </tbody>
+
+
+
+	</table>
+	</div>
+
+
+	<div class="col-lg-4">
+	<table  class="table table-bordered">
+	  <thead class="thead-light">
+		 <tr>
+			<th scope="col">Client2</th>
+			</tr>
+	  </thead>
+	  <tbody>
+		 <tr>
+			<td class="d-block d-lg-none bg-light text-left"><strong>Client2</strong></td>
+			<td data-label="Title"><input type="text" class="form-control" ng-model="formData.section2[21].client2.title" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Surname"><input type="text" class="form-control" ng-model="formData.section2[21].client2.surname" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Given Name(s)"><input type="text" class="form-control" ng-model="formData.section2[21].client2.given_name" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Preferred Name"><input type="text" class="form-control" ng-model="formData.section2[21].client2.preferred_name" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Gender">
+			<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client2.gender" value="Male">
+	  <label class="form-check-label" for="inlineRadio1">Male</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client2.gender" value="Female">
+	  <label class="form-check-label" for="inlineRadio2">Female</label>
+	</div></td>
+			</tr>
+		 <tr>
+			<td data-label="Marital Status"><input type="text" class="form-control" ng-model="formData.section2[21].client2.marital_status" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Australian Resident"><div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client2.australian_resident" value="Yes">
+	  <label class="form-check-label" for="inlineRadio1">Yes</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client2.australian_resident" value="No">
+	  <label class="form-check-label" for="inlineRadio2">No</label>
+	</div></td>
+			</tr>
+				 <tr>
+			<td data-label="If no, country of residence"><input type="text" class="form-control" ng-model="formData.section2[21].client2.country_resident" placeholder="" /></td>
+		 </tr>
+		 <tr>
+			<td data-label="Australian citizen"><div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client2.australian_citizen" value="Yes">
+	  <label class="form-check-label" for="inlineRadio1">Yes</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[21].client2.australian_citizen" value="No">
+	  <label class="form-check-label" for="inlineRadio2">No</label>
+	</div></td>
+		 </tr>
+			  <tr>
+			<td data-label="If no, country where citizenship held and visa details"><textarea class="form-control" ng-model="formData.section2[21].client2.country_citizen" rows="3"></textarea></td>
+			</tr>
+			<tr>
+			<td colspan="2" class="bg-light text-left"><span class="d-inline-block d-lg-none">Residential Address</span>&nbsp;</td>
+			</tr>
+			<tr>
+			<td data-label="Street"><textarea class="form-control" ng-model="formData.section2[21].client2.residential.street" rows="3"></textarea></td>
+			</tr>
+			<tr>
+			<td data-label="Suburub"><input type="text" class="form-control" ng-model="formData.section2[21].client2.residential.suburub" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="State"><input type="text" class="form-control" ng-model="formData.section2[21].client2.residential.state" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Postcode"><input type="text" class="form-control" ng-model="formData.section2[21].client2.residential.postcode" placeholder=""></td>
+			</tr>
+			<tr>
+			<td colspan="2" class="bg-light text-left">
+			<div class="form-check"><span class="d-inline-block d-lg-none">Postal Address
+		 <input type="checkbox" class="form-check-input ml-5" ng-model="formData.section2[21].client2.postal_address">
+		 <label class="form-check-label" for="exampleCheck1"></label>
+		 </span>&nbsp;
+	  </div>
+	  </td>
+			</tr>
+			<tr>
+			<td data-label="Street"><textarea class="form-control" ng-model="formData.section2[21].client2.postal.street" rows="3"></textarea></td>
+			</tr>
+			<tr>
+			<td data-label="Suburub"><input type="text" class="form-control" ng-model="formData.section2[21].client2.postal.suburub" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="State"><input type="text" class="form-control" ng-model="formData.section2[21].client2.postal.state" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Postcode"><input type="text" class="form-control" ng-model="formData.section2[21].client2.postal.postcode" placeholder=""></td>
+			</tr>
+					<tr>
+			<td colspan="2" class="bg-light text-left"><span class="d-inline-block d-lg-none">Phone Fax and Email</span>&nbsp;</td>
+			</tr>
+			<tr>
+			<td data-label="Home Phone"><input type="text" class="form-control" ng-model="formData.section2[21].client2.home_phone" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Business Phone"><input type="text" class="form-control" ng-model="formData.section2[21].client2.business_phone" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Business fax"><input type="text" class="form-control" ng-model="formData.section2[21].client2.business_fax" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Mobile"><input type="text" class="form-control" ng-model="formData.section2[21].client2.mobile" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Email"><input type="text" class="form-control" ng-model="formData.section2[21].client2.email" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Preferred contact method"><input type="text" class="form-control" ng-model="formData.section2[21].client2.contact_method" placeholder=""></td>
+			</tr>
+			<tr>
+			<td data-label="Social networking">
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client2.social.facebook" name="social">
+	  <label class="form-check-label" for="inlineCheckbox1">Facebook</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client2.social.twitter" name="social">
+	  <label class="form-check-label" for="inlineCheckbox2">Twitter</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client2.social.linkedin" name="social">
+	  <label class="form-check-label" for="inlineCheckbox3">Linkedin</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" ng-model="formData.section2[21].client2.social.skype" name="social">
+	  <label class="form-check-label" for="inlineCheckbox4">Skype</label>
+	</div>&nbsp;&nbsp;&nbsp;&nbsp;
+	</td>
+			</tr>
+			<tr>
+			<td data-label="Personal interests"><input type="text" class="form-control" ng-model="formData.section2[21].client2.personal_interest" placeholder=""></td>
+			</tr>
+	  </tbody>
+	  
+	</table>
+	</div>
+	</div>
+	  
+	<h2><span>2.2</span>Children and/or other Dependants | Current or Expected</h2>
+	<div class="row no-gutters">
+	<div class="col">
+	<table  class="table table-bordered">
+	  <thead class="thead-light">
+		 <tr>
+			<th scope="col">Full Name</th>
+			<th scope="col">Date of Birth</th>
+			<th scope="col">Gender</th>
+			<th scope="col">Relationship</th>
+			<th scope="col">Dependant</th>
+			<th scope="col">Dependant To</th>
+			</tr>
+	  </thead>
+	  <tbody>
+			<tr data-ng-repeat="i in [1,2,3,4,5] ">
+				
+				<td data-label="Full Name"><input type="text" class="form-control" ng-model="formData.section2[22].children[$index+1].full_name" placeholder=""></td>
+				<td data-label="Date of Birth"><input type="text" class="form-control" ng-model="formData.section2[22].children[$index+1].dob" placeholder=""></td>
+				<td data-label="Gender">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" ng-model="formData.section2[22].children[$index+1].gender" value="Male">
+						<label class="form-check-label" for="inlineRadio1">Male</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" ng-model="formData.section2[22].children[$index+1].gender" value="Female">
+					  <label class="form-check-label" for="inlineRadio2">Female</label>
+					</div>
+				</td>
+				<td data-label="Relationship"><input type="text" class="form-control" ng-model="formData.section2[22].children[$index+1].relationship" placeholder=""></td>
+				<td data-label="Dependant">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" ng-model="formData.section2[22].children[$index+1].dependant" value="Yes">
+						<label class="form-check-label" for="inlineRadio3">Yes</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" ng-model="formData.section2[22].children[$index+1].dependant" value="No">
+					  <label class="form-check-label" for="inlineRadio4">No</label>
+					</div>
+				</td>
+				<td data-label="Dependant To"><input type="text" class="form-control" ng-model="formData.section2[22].children[$index+1].dependant_to" placeholder=""></td>
+			</tr>
+			<tr>
+				<td class="d-none d-lg-table-cell">Additioanla details:</td>
+				<td colspan="5" data-label="Additioanla details:"><input type="text" class="form-control" ng-model="formData.section2[22].additional_details" placeholder=""></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	</div>
+	<h2><span>2.3</span>Associated Entities</h2>
+	<div class="row no-gutters">
+	<div class="col">
+	<table  class="table table-bordered">
+	  <tbody>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Do you have a business entity?</td>
+			<td data-label="Do you have a business entity?"><div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[23].business_entity" value="Yes">
+	  <label class="form-check-label" for="inlineRadio1">Yes</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[23].business_entity" value="No">
+	  <label class="form-check-label" for="inlineRadio2">No</label>
+	</div></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Do you have a Self Managed Supperannuation Fund (SMSF)?</td>
+			<td data-label="Do you have a Self Managed Supperannuation Fund (SMSF)?"><div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[23].smsf" value="Yes">
+	  <label class="form-check-label" for="inlineRadio1">Yes</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" ng-model="formData.section2[23].smsf" value="No">
+	  <label class="form-check-label" for="inlineRadio2">No</label>
+	</div></td>
+			</tr>
+		 
+		
+		 
+		 <tr>
+			<td class="d-none d-lg-table-cell">Additioanal details:</td>
+			<td colspan="5" data-label="Additioanla details:"><input type="text" class="form-control" ng-model="formData.section2[23].additional_details" placeholder=""></td>
+			</tr>
+	  </tbody>
+	</table>
+	</div>
+	</div>
+	<h2><span>2.4</span>Employment Details</h2>
+	<div class="row no-gutters">
+	<div class="col-lg-8">
+	<table  class="table table-bordered">
+	  <thead class="thead-light">
+		 <tr>
+			<th scope="col"></th>
+			<th scope="col">Client1</th>
+			</tr>
+	  </thead>
+	  <tbody>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Occupation/Title</td>
+			<td class="d-block d-lg-none bg-light text-left"><strong>Client1</strong></td>
+			<td data-label="Occupation/Title" class="w-50"><input type="text" class="form-control" ng-model="formData.section2[24].client1.title" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Job description/duties</td>
+			<td data-label="Job description/duties"><textarea class="form-control" ng-model="formData.section2[24].client1.job_description" rows="3"></textarea></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Qualification</td>
+			<td data-label="Qualification"><textarea class="form-control" ng-model="formData.section2[24].client1.qualification" rows="3"></textarea></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Employer name</td>
+			<td data-label="Employer name"><input type="text" class="form-control" ng-model="formData.section2[24].client1.employer_name" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Employment start date</td>
+			<td data-label="Employment start date"><input type="text" class="form-control" ng-model="formData.section2[24].client1.emp_start_date" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Do you work overseas?</td>
+			<td data-label="Do you work overseas?"><input type="text" class="form-control" ng-model="formData.section2[24].client1.overseas" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">If yes, list relevant country(ies)</td>
+			<td data-label="If yes, list relevant country(ies)"><input type="text" class="form-control" ng-model="formData.section2[24].client1.relevant_country" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Avaliable personal leave days</td>
+			<td data-label="Avaliable personal leave days"><input type="text" class="form-control" ng-model="formData.section2[24].client1.leave_days" placeholder="" /></td>
+		 </tr>
+			  <tr>
+			<td class="d-none d-lg-table-cell">Tax File Number (TFN)</td>
+			<td data-label="Tax File Number (TFN)"><input type="text" class="form-control" ng-model="formData.section2[24].client1.tfn" placeholder="" /></td>
+		 </tr>
+		 <tr>
+			<td class="d-none d-lg-table-cell">Employment status</td>
+			<td data-label="Employment status">
+			<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.fulltime">
+	  <label class="form-check-label" for="inlineCheckbox1">Full-time</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.parttime">
+	  <label class="form-check-label" for="inlineCheckbox2">Part-time</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.casual">
+	  <label class="form-check-label" for="inlineCheckbox3">Casual</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.unemployed">
+	  <label class="form-check-label" for="inlineCheckbox4">Unemployed</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.home_duties">
+	  <label class="form-check-label" for="inlineCheckbox4">Home duties</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.retired">
+	  <label class="form-check-label" for="inlineCheckbox4">Retired</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client1.emp_status.self_employed">
+	  <label class="form-check-label" for="inlineCheckbox4">Self employed</label>
+	</div></td>
+			</tr>
+			<tr>
+			<td class="d-none d-lg-table-cell">If part-time, how many hours worked?</td>
+			<td data-label="If part-time, how many hours worked?"><input type="text" class="form-control" ng-model="formData.section2[24].client1.work_hour" placeholder=""></td>
+			</tr>
+		  <tr>
+			<td class="d-none d-lg-table-cell">If self employed, what structure?</td>
+			<td data-label="If self employed, what structure?">
+			<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client1.self_employed.trust">
+	  <label class="form-check-label" for="inlineCheckbox1">Trust</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client1.self_employed.company">
+	  <label class="form-check-label" for="inlineCheckbox2">Company</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client1.self_employed.sole_trader">
+	  <label class="form-check-label" for="inlineCheckbox3">Sole Trader</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client1.self_employed.partnership">
+	  <label class="form-check-label" for="inlineCheckbox4">Partnership</label>
+	</div>
+	</td>
+			</tr>
+					
+	  </tbody>
+
+
+
+	</table>
+	</div>
+
+
+	<div class="col-lg-4">
+	<table class="table table-bordered">
+	  <thead class="thead-light">
+		 <tr>
+			<th scope="col">Client2</th>
+			</tr>
+	  </thead>
+	  <tbody>
+		 <tr>
+			<td class="d-block d-lg-none bg-light text-left"><strong>Client2</strong></td>
+			<td data-label="Occupation/Title"><input type="text" class="form-control" ng-model="formData.section2[24].client2.title" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Job description/duties"><textarea class="form-control" ng-model="formData.section2[24].client2.job_description" rows="3"></textarea></td>
+			</tr>
+		 <tr>
+			<td data-label="Qualification"><textarea class="form-control" ng-model="formData.section2[24].client2.qualification" rows="3"></textarea></td>
+			</tr>
+		 <tr>
+			<td data-label="Employer name"><input type="text" class="form-control" ng-model="formData.section2[24].client2.employer_name" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Employment start date"><input type="text" class="form-control" ng-model="formData.section2[24].client2.emp_start_date" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Do you work overseas?"><input type="text" class="form-control" ng-model="formData.section2[24].client2.overseas" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="If yes, list relevant country(ies)"><input type="text" class="form-control" ng-model="formData.section2[24].client2.relevant_country" placeholder=""></td>
+			</tr>
+		 <tr>
+			<td data-label="Avaliable personal leave days"><input type="text" class="form-control" ng-model="formData.section2[24].client2.title" placeholder="" /></td>
+		 </tr>
+			  <tr>
+			<td data-label="Tax File Number (TFN)"><input type="text" class="form-control" ng-model="formData.section2[24].client2.tfn" placeholder="" /></td>
+		 </tr>
+		 <tr>
+			<td data-label="Employment status">
+			<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.fulltime">
+	  <label class="form-check-label" for="inlineCheckbox1">Full-time</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.parttime">
+	  <label class="form-check-label" for="inlineCheckbox2">Part-time</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.casual">
+	  <label class="form-check-label" for="inlineCheckbox3">Casual</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.unemployed">
+	  <label class="form-check-label" for="inlineCheckbox4">Unemployed</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.home_duties">
+	  <label class="form-check-label" for="inlineCheckbox4">Home duties</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.retired">
+	  <label class="form-check-label" for="inlineCheckbox4">Retired</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="emp_status" ng-model="formData.section2[24].client2.emp_status.self_employed">
+	  <label class="form-check-label" for="inlineCheckbox4">Self employed</label>
+	</div></td>
+			</tr>
+			<tr>
+			<td data-label="If part-time, how many hours worked?"><input type="text" class="form-control" ng-model="formData.section2[24].client2.work_hour" placeholder=""></td>
+			</tr>
+		  <tr>
+			<td data-label="If self employed, what structure?">
+			<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client2.self_employed.trust">
+	  <label class="form-check-label" for="inlineCheckbox1">Trust</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client2.company.trust">
+	  <label class="form-check-label" for="inlineCheckbox2">Company</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client2.self_employed.sole_trader">
+	  <label class="form-check-label" for="inlineCheckbox3">Sole Trader</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="checkbox" name="self_employed" ng-model="formData.section2[24].client2.self_employed.partnership">
+	  <label class="form-check-label" for="inlineCheckbox4">Partnership</label>
+	</div>
+	</td>
+			</tr>
+
+	  </tbody>
+	  
+	</table>
+	</div>
+	</div>
+	<table class="table table-bordered">
+	<tbody>
+	<tr>
+					<td class="d-none d-lg-table-cell">Additional details:</td>
+			<td data-label="Additional details:"><input type="text" class="form-control" ng-model="formData.section2[24].client2.additional_details" placeholder=""></td>
+			</tr>
+	  </tbody>
+	</table>
+	<h2><span>2.5</span>Centrelink/Department of Veterans' Affairs (DVA)/Family Assistance</h2>
+	<div class="row no-gutters">
+		<div class="col-lg-8">
+			<table  class="table table-bordered">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col"><small></small></th>
+						<th scope="col">Client1</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="d-none d-lg-table-cell w-50">What benefits do you currently receive from Centerlink/DVA/Family Assistance?</td>
+						<td class="d-block d-lg-none bg-light text-left"><strong>Client1</strong></td>
+						<td data-label="What benefits do you currently receive from Centerlink/DVA/Family Assistance?">
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">Centerlink/DVA: $</div>
+								</div>
+								<input type="text" class="form-control" ng-model="formData.section2[25].client1.centerlink_dva"/>
+							</div>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">Family Assistance: $</div>
+								</div>
+								<input type="text" class="form-control" ng-model="formData.section2[25].client1.family_assistance" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+					  <td class="d-none d-lg-table-cell">Are recent statements attached?</td>
+					  <td data-label="Are recent statements attached?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.recent_statement" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.recent_statement" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="d-none d-lg-table-cell">Do you intend to apply for any Centerlink/DVA/Family Assistance payments in the near future?</td>
+					  <td data-label="Do you intend to apply for any Centerlink/DVA/Family Assistance payments in the near future?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.intend" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.intend" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="d-none d-lg-table-cell">If yes, please provide the details?</td>
+					  <td data-label="If yes, please provide the details?">
+						<textarea class="form-control" ng-model="formData.section2[25].client1.intend_details" rows="3"></textarea>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="d-none d-lg-table-cell">Have you 'gifted' any assets in the last five years?</td>
+					  <td data-label="Have you 'gifted' any assets in the last five years?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.gifted" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.gifted" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="d-none d-lg-table-cell">If yes, please provide the details?</td>
+					  <td data-label="If yes, please provide the details?">
+						<textarea class="form-control" ng-model="formData.section2[25].client1.gifted_details" rows="3"></textarea>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="d-none d-lg-table-cell">Do you hold a current Seniors Card or Health Card?</td>
+					  <td data-label="Do you hold a current Seniors Card or Health Card?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.card" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client1.card" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-lg-4">
+			<table class="table table-bordered">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col">Client2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="d-block d-lg-none bg-light text-left"><strong>Client1</strong></td>
+						<td data-label="What benefits do you currently receive from Centerlink/DVA/Family Assistance?">
+							<div class="input-group mb-2">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">Centerlink/DVA: $</div>
+								</div>
+								<input type="text" class="form-control" ng-model="formData.section2[25].client2.centerlink_dva"/>
+							</div>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">Family Assistance: $</div>
+								</div>
+								<input type="text" class="form-control" ng-model="formData.section2[25].client2.family_assistance" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+					  <td data-label="Are recent statements attached?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.recent_statement" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.recent_statement" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="height-70" data-label="Do you intend to apply for any Centerlink/DVA/Family Assistance payments in the near future?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.intend" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.intend" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+					<tr>
+					 <td data-label="If yes, please provide the details?">
+						<textarea class="form-control" ng-model="formData.section2[25].client2.intend_details" rows="3"></textarea>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="height-70" data-label="Have you 'gifted' any assets in the last five years?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.gifted" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.gifted" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+					<tr>
+					 <td data-label="If yes, please provide the details?">
+						<textarea class="form-control" ng-model="formData.section2[25].client2.gifted_details" rows="3"></textarea>
+					  </td>
+					</tr>
+					<tr>
+					  <td class="height-70" data-label="Do you hold a current Seniors Card or Health Card?">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.card" value="Yes">
+							<label class="form-check-label" for="inlineCheckbox1">Yes</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" ng-model="formData.section2[25].client2.card" value="No">
+							<label class="form-check-label" for="inlineCheckbox2">No</label>
+						</div>
+					  </td>
+					</tr>
+				</tbody> 
+			</table>
+		</div>
+	</div>
+</div>
+<div class="control" ng-hide ="nobutton">
+	<button class="btn btn-primary pull-left" ui-sref="form.section1" >Previous</button>
+	<button class="btn btn-primary pull-right" ng-click="save()" ui-sref="form.section3" >Next</button>
+</div>
+
